@@ -1,8 +1,10 @@
 html {
   background-color: #A1A6B4;
+  height: 100vh;  
+
   display: grid;
   place-items: center; 
-  height: 100vh;  
+
   margin: 0;
   padding: 0;
 }

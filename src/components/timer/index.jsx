@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 const Timer = ({ title, endTime, elapsedTime = 0}) => {
 
-    
     /*--------------------*
     |     TIME FORMAT     |
     *--------------------*/
