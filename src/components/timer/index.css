@@ -10,12 +10,11 @@
     width: 300px;
 
     position: relative;
-    padding: 15px 0px 0px 0px;
+    padding: 20px 0px 5px 0px;
 }
 
 .mainElement {
     font-family: "Open Sans", sans-serif;
-    position: relative;
 
     margin-top: 60px;
 
@@ -41,8 +40,14 @@
     z-index: 1;
 }
 
+/*-------------------*
+|                    |
+|      BUTTONS       |
+|                    |
+*-------------------*/
+
 .buttonContainer {
-    margin: 60px 5px 10px 5px;
+    margin: 55px 5px 10px 5px;
     padding: 20px;
 }
 
@@ -62,14 +67,29 @@ button {
     color: rgba(255, 255, 255, 0.81);
 }
 
+/*-------------------*
+|                    |
+|       CIRCLE       |
+|                    |
+*-------------------*/
+
 svg {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: auto;
 }
 
 circle {
     transition: stroke-dashoffset 1s linear;
     transform-origin: center;
     transform: rotate(-90deg);
+}
+
+.hidden {
+    stroke: #545576;
 }
 
 /*-----------------------------*

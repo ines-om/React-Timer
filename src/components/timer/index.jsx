@@ -95,7 +95,7 @@ const Timer = ({ title, endTime, elapsedTime = 0}) => {
             fill="none"
             stroke="#545576"
             strokeWidth="1.5"/>
-          <circle className={`${timerEnded ? "end-animation" : "progressCircle"}`}
+          <circle className={`${timerEnded ? "end-animation" : `${timeElapsed === 0 ? "hidden" : "progressCircle"}`}`}
             cx="0"
             cy="0"
             r="16"
