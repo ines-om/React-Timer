@@ -4,7 +4,7 @@ import Timer from './components/timer';
 function App() {
   return (
     <>
-    <Timer title={"Timer"} endTime={10} elapsedTime={0}></Timer>
+    <Timer title={"Timer"} endTime={10} elapsedTime={5}></Timer>
     </>
   );
 }

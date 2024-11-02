@@ -1,3 +1,4 @@
+/* Open Sans Import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 .fullTimer {
@@ -5,13 +6,19 @@
 
     display: flex;
     flex-direction: column;
+
     border-radius: 25px;
 
     width: 300px;
+    height: auto;
 
     position: relative;
     padding: 20px 0px 5px 0px;
 }
+
+/*-------------------*
+|    TIMER + TEXT    |
+*-------------------*/
 
 .mainElement {
     font-family: "Open Sans", sans-serif;
@@ -41,9 +48,7 @@
 }
 
 /*-------------------*
-|                    |
 |      BUTTONS       |
-|                    |
 *-------------------*/
 
 .buttonContainer {
@@ -68,9 +73,7 @@ button {
 }
 
 /*-------------------*
-|                    |
 |       CIRCLE       |
-|                    |
 *-------------------*/
 
 svg {
@@ -92,11 +95,9 @@ circle {
     opacity: 0;
 }
 
-/*-----------------------------*
-|                               |
-|       ENDING ANIMATION        |
-|                               |
-*------------------------------*/
+/*------------------------*
+|    ENDING ANIMATION     |
+*------------------------*/
 
 @keyframes alternateColors {
     0% { stroke: #67cb88; }
