@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.fullTimer {
+    background-color: #26273d;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+
+    width: 300px;
+
+    position: relative;
+    padding: 15px 0px 0px 0px;
+}
+
+.mainElement {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+
+    margin-top: 60px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtext {
+    color: #a2a4cb;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 5px;
+}
+
+.timer{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+
+    margin: 5px;
+    position: 'relative';
+    z-index: 1;
+}
+
+.buttonContainer {
+    margin: 60px 5px 10px 5px;
+    padding: 20px;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+
+    margin-right: 10px;
+    border: solid #606170 1.5px;
+    border-radius: 20px;
+
+    width: 70px;
+    height: 33px;
+
+    background-color: #26273d;
+    color: rgba(255, 255, 255, 0.81);
+}
+
+svg {
+    position: absolute;
+}
+
+circle {
+    transition: stroke-dashoffset 1s linear;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+/*-----------------------------*
+|                               |
+|       ENDING ANIMATION        |
+|                               |
+*------------------------------*/
+
+@keyframes alternateColors {
+    0% { stroke: #67cb88; }
+    50% { stroke: #cb6767; }
+    100% { stroke: #67cb88; }
+}
+
+.end-animation {
+    animation: alternateColors 1s linear infinite;
+}
