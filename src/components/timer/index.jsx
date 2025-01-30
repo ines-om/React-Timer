@@ -109,7 +109,6 @@ const Timer = ({ title, endTime, elapsedTime = 0}) => {
     return (
         <div className="fullTimer">
         
-        //Circle Component
         <svg viewBox="-24.5 31 50 50" >
           <circle className="backgroundCircle"
             cx="0"
@@ -128,8 +127,7 @@ const Timer = ({ title, endTime, elapsedTime = 0}) => {
             strokeDasharray="101" 
             strokeDashoffset={100 - progress} />
         </svg>
-
-        // Timer layout - Text, Countdown and Buttons
+            
         <div className="timer">
             <div className="mainElement">
             <h6 className="subtext"> {title} </h6>
